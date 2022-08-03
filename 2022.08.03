@@ -1,0 +1,38 @@
+// practical - 1
+
+console.log("starting program");
+
+console.log("fun here", sum(0,10));
+
+function sum(a, b) {
+    var start = 1;
+    var end = 10;
+    
+    var current = 0;
+
+    while (start<=end){
+        current+=start++;
+    }
+    
+    return current; 
+}
+
+
+console.log("ending program");
+
+// practical - 2
+
+<html>
+    
+<head>
+    <h1>Parth Raval</h1>
+</head>
+<body>
+       <p id="title"> P is for PARA</p>
+</body>
+<script>
+    document.getElementById("title").textContent = "New"
+    document
+    document.body.append()
+</script>
+</html>
