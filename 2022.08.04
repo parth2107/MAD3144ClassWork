@@ -7,19 +7,16 @@
        <p id="title"> P is for PARA</p>
 </body>
 <script>
-    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); 
-    svg.width = 500;
-    svg.height  =  50;
+    var canvas = document.createElement('canvas'); 
+    canvas.width = 500;
+    canvas.height = 250;
 
-    var text = document.createElementNS('http://www.w3.org/2000/svg', 'text'); 
-    text.setAttribute('x', '0');
-    text.setAttribute('y', '50'); 
-    text.style.fontFamily = 'Times New Roman'; 
-    text.style.fontSize = '50';
+    var ctx = canvas.getContext('2d');
 
-    text.textContent = 'Hello world!';
+    ctx.font = '30px Cursive'; 
+    ctx.fillText("Hello world!", 50, 50);
 
-    svg.appendChild(text); 
-    document.body.appendChild(svg);
+    document.body.appendChild(canvas);
+
 </script>
 </html>
