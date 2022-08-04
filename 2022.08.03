@@ -32,7 +32,13 @@ console.log("ending program");
 </body>
 <script>
     document.getElementById("title").textContent = "New"
-    document
-    document.body.append()
+    
+    const elem = document.createElement("li");
+    const text = document.createTextNode("Tea");
+
+
+    elem.appendChild(text);
+
+    document.body.appendChild(elem);
 </script>
 </html>
